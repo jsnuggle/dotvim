@@ -1,0 +1,171 @@
+[submodule "bundle/repeat"]
+	path = bundle/repeat
+	url = https://github.com/tpope/vim-repeat.git
+    ignore = untracked
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic
+    ignore = untracked
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+    ignore = untracked
+[submodule "bundle/nerdcommenter"]
+	path = bundle/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter.git
+    ignore = untracked
+[submodule "bundle/space"]
+	path = bundle/space
+	url = http://github.com/scrooloose/vim-space.git
+    ignore = untracked
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+    ignore = untracked
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+    ignore = untracked
+[submodule "bundle/rainbow"]
+	path = bundle/rainbow
+	url = http://github.com/chrismetcalf/vim-rainbow.git
+    ignore = untracked
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+    ignore = untracked
+[submodule "bundle/PIV"]
+	path = bundle/PIV
+	url = http://github.com/spf13/PIV.git
+    ignore = dirty
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+    ignore = untracked
+[submodule "bundle/unimpaired"]
+	path = bundle/unimpaired
+	url = http://github.com/tpope/vim-unimpaired.git
+    ignore = untracked
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = https://github.com/sjl/gundo.vim.git
+    ignore = dirty
+[submodule "bundle/markdown"]
+	path = bundle/markdown
+	url = https://github.com/tpope/vim-markdown
+    ignore = untracked
+[submodule "bundle/markdown-preview"]
+	path = bundle/markdown-preview
+	url = https://github.com/mkitt/markdown-preview.vim.git
+    ignore = untracked
+[submodule "bundle/delimitMate"]
+	path = bundle/delimitMate
+	url = https://github.com/Raimondi/delimitMate.git
+    ignore = untracked
+[submodule "bundle/indent-guides"]
+	path = bundle/indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+    ignore = untracked
+[submodule "bundle/git"]
+	path = bundle/git
+	url = https://github.com/tpope/vim-git
+    ignore = untracked
+[submodule "bundle/eunuch"]
+	path = bundle/eunuch
+	url = https://github.com/tpope/vim-eunuch.git
+    ignore = untracked
+[submodule "bundle/jellybeans"]
+	path = bundle/jellybeans
+	url = https://github.com/nanotech/jellybeans.vim.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git
+[submodule "bundle/taglist"]
+	path = bundle/taglist
+	url = https://github.com/vim-scripts/taglist.vim.git
+    ignore = untracked
+[submodule "bundle/yankring"]
+	path = bundle/yankring
+	url = https://github.com/vim-scripts/YankRing.vim.git
+    ignore = untracked
+[submodule "bundle/pathogen"]
+	path = bundle/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "ctrlp.vim"]
+	path = ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/ctrlp.vim"]
+	path = bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = https://github.com/wincent/Command-T.git
+[submodule "bundle/acp"]
+	path = bundle/acp
+	url = https://github.com/vim-scripts/AutoComplPop.git
+[submodule "bundle/YouCompleteMe"]
+	path = bundle/YouCompleteMe
+	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule "nerdtree"]
+	path = nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/nerdcommander"]
+	path = bundle/nerdcommander
+	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/powerline"]
+	path = bundle/powerline
+	url = https://github.com/Lokaltog/powerline.git
+[submodule "bundle/tcomment"]
+	path = bundle/tcomment
+	url = git://github.com/tomtom/tcomment_vim.git
+[submodule "bundle/gist"]
+	path = bundle/gist
+	url = https://github.com/mattn/gist-vim.git
+[submodule "bundle/webapi"]
+	path = bundle/webapi
+	url = https://github.com/mattn/webapi-vim.git
+[submodule "bundle/IndexedSearch"]
+	path = bundle/IndexedSearch
+	url = https://github.com/vim-scripts/IndexedSearch.git
+[submodule "bundle/jquery"]
+	path = bundle/jquery
+	url = http://github.com/vim-scripts/jQuery.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = https://github.com/tsaleh/vim-matchit.git
+[submodule "bundle/javascript"]
+	path = bundle/javascript
+	url = http://github.com/pangloss/vim-javascript.git
+[submodule "bundle/pasta"]
+	path = bundle/pasta
+	url = https://github.com/sickill/vim-pasta.git
+[submodule "bundle/airline"]
+	path = bundle/airline
+	url = https://github.com/bling/vim-airline.git
+[submodule "bundle/rooter"]
+	path = bundle/rooter
+	url = https://github.com/airblade/vim-rooter.git
+[submodule "bundle/nerdtree-tabs"]
+	path = bundle/nerdtree-tabs
+	url = https://github.com/jistr/vim-nerdtree-tabs.git
+[submodule "bundle/mru"]
+	path = bundle/mru
+	url = https://github.com/vim-scripts/mru.vim.git
+[submodule "bundle/librarian"]
+	path = bundle/librarian
+	url = https://github.com/malkomalko/vim-librarian.vim.git
+[submodule "bundle/javascript-enhanced"]
+	path = bundle/javascript-enhanced
+	url = https://github.com/jelera/vim-javascript-syntax.git
+[submodule "bundle/tlib"]
+	path = bundle/tlib
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "bundle/mw-utils"]
+	path = bundle/mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/snippets"]
+	path = bundle/snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/buffergator"]
+	path = bundle/buffergator
+	url = https://github.com/jeetsukumaran/vim-buffergator.git
