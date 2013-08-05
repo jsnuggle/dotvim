@@ -121,9 +121,23 @@ endif
 
 set undolevels=1000
 
+" goodbye help key:
+inoremap <F1> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
+
+" goodbye folidng: 
+set foldlevel=999
+au BufRead * normal zR
+
 " ===============
 " Key Remaps
 " ===============
+
+" remap the command key
+nnoremap ; :
+
+" 
 nmap <C-H> :tabprev<CR>
 nmap <C-L> :tabnext<CR>
 
@@ -324,8 +338,6 @@ autocmd FileType php let php_noShortTags = 1
 " highlight functions from the base library
 autocmd FileType php let php_baselib = 1
 
-" open PHP classes but not functions
-autocmd FileType php set foldlevel=999
 
 " OmniCompletion for std lib functions and so forth (C-X, C-o)
 set omnifunc=syntaxcomplete#Complete
