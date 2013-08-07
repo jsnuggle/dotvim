@@ -1,11 +1,16 @@
 vimfiles
 ========
-This is the vim configuration I use daily. It's mostly for use with vim 7.3 and tmux.
+This is the vim configuration I use daily, based on Vim 7.3 inside of a tmux
+session.  It is heavily skewed towards PHP development, since that's what
+I spend the majority of my time doing.
 
-This setup steals heavily from [DeMarko](https://github.com/DeMarko/dotvim).
+I steal heavily from [DeMarko](https://github.com/DeMarko/dotvim).
 Thanks dude.
 
-I recommend looking at [this guide](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/) if you're getting started or trying to clone my files and not having any luck.
+If you're just getting started, you might want to read more about how Pathogen works.  I recommend looking at [this guide](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/).
+
+I also found [this
+article](http://stevelosh.com/blog/2010/09/coming-home-to-vim/) to be very helpful. Take it or leave it.
 
 ### how to install ###
 this is the quickest way to install these files
@@ -24,26 +29,3 @@ this is the quickest way to install these files
 ### updating bundles ###
 
     git submodule foreach git pull origin master
-
-### disclaimer ###
-I write a good amount of PHP at work so it may lean a bit in that direction
-
-### acknowledgements ###
-here are some of the things I couldn't submodule:
-
-+  tomasr's [molokai][] 
-+  Lars H. Nielsen's [wombat][]
-+  Peter Hodge's [php.vim][]
-+  Ken Earl's [smarty.vim][]
-+  Rainer M. Schmid's [valgrind.vim][]
-+  Todd Werth's [ir_black][]
-+  Justin Constantino's [candycode][]
-
-[MacVim]: http://code.google.com/p/macvim/ "MacVim.app"
-[molokai]: http://winterdom.com/2008/08/molokaiforvim "Molokai Colorscheme"
-[wombat]: http://dengmao.wordpress.com/2007/01/22/vim-color-scheme-wombat/ "Wombat Colorscheme"
-[php.vim]: http://www.vim.org/scripts/script.php?script_id=1571 "PHP Syntax"
-[smarty.vim]: http://www.vim.org/scripts/script.php?script_id=1798 "Smarty Syntax"
-[valgrind.vim]: http://www.vim.org/scripts/script.php?script_id=607 "Valgrind navigator"
-[candycode]: http://www.vim.org/scripts/script.php?script_id=1635
-[ir_black]: http://blog.infinitered.com/entries/show/8
