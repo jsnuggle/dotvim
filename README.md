@@ -19,12 +19,10 @@ this is the quickest way to install these files
     # skip if you don't have a config or have removed your own
     mv .vim vimfilesbackup
     mv .vimrc vimfilesbackup/vimrcbck
-    mv .gvimrc vimfilesbackup/gvimrcbck
 
     # once we're clear, we can download and link my vimfiles
     git clone --recursive git://github.com/DeMarko/dotvim.git ~/.vim
     ln -s ~/.vim/vimrc ~/.vimrc
-    ln -s ~/.vim/gvimrc ~/.gvimrc
 
 ### updating bundles ###
 
