@@ -126,7 +126,7 @@ inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
 
-" goodbye folidng: 
+" goodbye folidng:
 set foldlevel=999
 au BufRead * normal zR
 
@@ -137,7 +137,7 @@ au BufRead * normal zR
 " remap the command key
 nnoremap ; :
 
-" 
+"
 nmap <C-H> :tabprev<CR>
 nmap <C-L> :tabnext<CR>
 
@@ -361,15 +361,15 @@ function! <SID>BeautifyCode()
 
     " appease the almighty php staging code sniffer
     %s/\(if\|foreach\)(/\1 (/e
-    %s/\()\) {/\1 {/e
+    %s/\()\){/\1 {/e
     %s/}\(catch\|else\)/} \1/e
-    %s/\(else\|try\) {/\1 {/e
+    %s/\(else\|try\){/\1 {/e
 
     " Clean up: restore previous search history, and cursor position
     let @/=_s
     call cursor(l, c)
 endfunction
-autocmd FileType php autocmd BufWritePre * silent! :call <SID>BeautifyCode()
+autocmd FileType php autocmd BufWritePre <buffer> silent! :call <SID>BeautifyCode()
 
 " NERDTreeQuit:
 " close the NERDTree window if there are no other open buffers
