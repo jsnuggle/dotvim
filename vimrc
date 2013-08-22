@@ -331,10 +331,8 @@ au Filetype smarty set complete+=k
 autocmd FileType php let php_sql_query = 1
 " does exactly that. highlights html inside of php strings
 autocmd FileType php let php_htmlInStrings = 1
-" discourages use oh short tags. c'mon its deprecated remember
+" discourages use of short tags.
 autocmd FileType php let php_noShortTags = 1
-" automagically folds functions & methods. this is getting IDE-like isn't it?
-"autocmd FileType php let php_folding = 3
 " highlight functions from the base library
 autocmd FileType php let php_baselib = 1
 

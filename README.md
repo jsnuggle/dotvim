@@ -21,7 +21,7 @@ this is the quickest way to install these files
     mv .vimrc vimfilesbackup/vimrcbck
 
     # once we're clear, we can download and link my vimfiles
-    git clone --recursive git://github.com/DeMarko/dotvim.git ~/.vim
+    git clone --recursive git://github.com/jsnuggle/dotvim.git ~/.vim
     ln -s ~/.vim/vimrc ~/.vimrc
 
 ### updating bundles ###
