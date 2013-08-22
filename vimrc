@@ -415,8 +415,8 @@ nmap <silent> \ :QFix<CR>
 " ====
 
 " match Etsy coding standards
-let g:syntastic_php_phpcs_args="--standard=".expand($HOME)."/development/Etsyweb/tests/standards/stable-ruleset.xml"
+let g:syntastic_php_phpcs_args="--report=csv --standard=".expand($HOME)."/development/Etsyweb/tests/standards/stable-ruleset.xml"
 
-let g:syntastic_csslint_options = "--format=compact --warnings=important,outline-none,display-property-grouping,duplicate-background-images,compatible-vendor-prefixes,known-properties --ignore=adjoining-classes,box-sizing,box-model,qualified-headings,ids,overqualified-elements,import --quiet"
+let g:syntastic_css_csslint_args = "--format=compact --warnings=important,outline-none,display-property-grouping,duplicate-background-images,compatible-vendor-prefixes,known-properties --ignore=adjoining-classes,box-sizing,box-model,qualified-headings,ids,overqualified-elements,import --quiet"
 
-let g:syntastic_javascript_jshint_conf = "--config=/home/".expand($USER)."/development/Etsyweb/bin/.jshintrc"
+let g:syntastic_javascript_jshint_args = "--config=/home/".expand($USER)."/development/Etsyweb/bin/jenkins/.jshintrc"
