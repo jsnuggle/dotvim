@@ -170,3 +170,9 @@
 [submodule "bundle/buffergator"]
 	path = bundle/buffergator
 	url = https://github.com/jeetsukumaran/vim-buffergator.git
+[submodule "bundle/vdebug"]
+	path = bundle/vdebug
+	url = https://github.com/joonty/vdebug.git
+[submodule "bundle/greplace"]
+	path = bundle/greplace
+	url = https://github.com/vim-scripts/greplace.vim.git
