@@ -42,9 +42,9 @@ set ruler                          " add a useful ruler
 set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " a ruler on steroids
 
 " Formatting
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set expandtab
 set tags=tags;/
 
@@ -99,6 +99,7 @@ set wildignore+=*.luac                           " Lua byte code
 set wildignore+=migrations                       " Django migrations
 set wildignore+=*.pyc                            " Python byte code
 set wildignore+=*.orig                           " Merge resolution files"
+set wildignore+=*.class                          " Java byte code
 set wildchar=<TAB>                 " have command-line completion <Tab>
 
 set ttyfast                        " enable support for higher speed terminal connections
@@ -182,7 +183,8 @@ nnoremap <leader>bb :BuffergatorToggle<CR>
 nnoremap <leader>bt :BuffergatorTabsToggle<CR>
 
 " Fugitive
-nnoremap <leader>gb :Gblame<CR>
+let g:fugitive_github_domains = ['github.etsycorp.com']
+nnoremap <leader>b :Gblame<CR>
 nnoremap <leader>gd :Gdiff<cr>
 nnoremap <leader>gs :Gstatus<cr>
 nnoremap <leader>gw :Gwrite<cr>
@@ -190,6 +192,8 @@ nnoremap <leader>gco :Gcheckout<cr>
 nnoremap <leader>gc :Gcommit<cr>
 nnoremap <leader>gm :Gmove<cr>
 nnoremap <leader>gr :Gremove<cr>
+nnoremap <leader>gb :Gbrowse<CR>
+vnoremap <leader>gb :Gbrowse<CR>
 
 " Yankring
 nnoremap <silent> <leader>y :YRShow<cr>
@@ -317,6 +321,9 @@ autocmd FileType perl set smartindent
 " (despite the mappings later):
 autocmd FileType make set noexpandtab shiftwidth=8
 
+" filetype-specific tab expansion:
+autocmd FileType php setlocal shiftwidth=4 softtabstop=4 tabstop=4
+
 " show git diff in window split when committing
 " broken if autochdir is enabled
 " autocmd FileType gitcommit DiffGitCached | wincmd p
@@ -420,3 +427,5 @@ let g:syntastic_php_phpcs_args="--report=csv --standard=".expand($HOME)."/develo
 let g:syntastic_css_csslint_args = "--format=compact --warnings=important,outline-none,display-property-grouping,duplicate-background-images,compatible-vendor-prefixes,known-properties --ignore=adjoining-classes,box-sizing,box-model,qualified-headings,ids,overqualified-elements,import --quiet"
 
 let g:syntastic_javascript_jshint_args = "--config=/home/".expand($USER)."/development/Etsyweb/bin/jenkins/.jshintrc"
+
+autocmd BufWritePost /usr/etsy/deployinator/* :silent !touch /usr/etsy/deployinator/tmp/restart.txt
