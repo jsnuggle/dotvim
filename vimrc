@@ -42,9 +42,9 @@ set ruler                          " add a useful ruler
 set rulerformat=%30(%=\:b%n%y%m%r%w\ %l,%c%V\ %P%) " a ruler on steroids
 
 " Formatting
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
 set expandtab
 set tags=tags;/
 
@@ -322,7 +322,8 @@ autocmd FileType perl set smartindent
 autocmd FileType make set noexpandtab shiftwidth=8
 
 " filetype-specific tab expansion:
-autocmd FileType php setlocal shiftwidth=4 softtabstop=4 tabstop=4
+autocmd FileType java setlocal shiftwidth=2 softtabstop=2 tabstop=2
+autocmd FileType scala setlocal shiftwidth=2 softtabstop=2 tabstop=2
 
 " show git diff in window split when committing
 " broken if autochdir is enabled
@@ -375,6 +376,7 @@ function! <SID>BeautifyCode()
     call cursor(l, c)
 endfunction
 autocmd FileType php autocmd BufWritePre <buffer> silent! :call <SID>BeautifyCode()
+autocmd FileType javascript autocmd BufWritePre <buffer> silent! :call <SID>BeautifyCode()
 
 " NERDTreeQuit:
 " close the NERDTree window if there are no other open buffers
@@ -416,6 +418,22 @@ function! QFixToggle(forced)
 endfunction
 command! -bang -nargs=? QFix call QFixToggle(<bang>0)
 nmap <silent> \ :QFix<CR>
+
+" MkNonExDir
+" if you're editing a file in the buffer that's in a folder that doesn't exist yet
+" this will create the folder on save
+function s:MkNonExDir(file, buf)
+    if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
+        let dir=fnamemodify(a:file, ':h')
+        if !isdirectory(dir)
+            call mkdir(dir, 'p')
+        endif
+    endif
+endfunction
+augroup BWCCreateDir
+    autocmd!
+    autocmd BufWritePre * :call s:MkNonExDir(expand('<afile>'), +expand('<abuf>'))
+augroup END
 
 " ====
 " ETSY
