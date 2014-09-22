@@ -376,7 +376,7 @@ function! <SID>BeautifyCode()
     call cursor(l, c)
 endfunction
 autocmd FileType php autocmd BufWritePre <buffer> silent! :call <SID>BeautifyCode()
-autocmd FileType javascript autocmd BufWritePre <buffer> silent! :call <SID>BeautifyCode()
+" autocmd FileType javascript autocmd BufWritePre <buffer> silent! :call <SID>BeautifyCode()
 
 " NERDTreeQuit:
 " close the NERDTree window if there are no other open buffers
@@ -422,7 +422,7 @@ nmap <silent> \ :QFix<CR>
 " MkNonExDir
 " if you're editing a file in the buffer that's in a folder that doesn't exist yet
 " this will create the folder on save
-function s:MkNonExDir(file, buf)
+function! s:MkNonExDir(file, buf)
     if empty(getbufvar(a:buf, '&buftype')) && a:file!~#'\v^\w+\:\/'
         let dir=fnamemodify(a:file, ':h')
         if !isdirectory(dir)
